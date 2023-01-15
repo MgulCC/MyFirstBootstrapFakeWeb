@@ -1,0 +1,15 @@
+img{
+    width: 100%;
+}
+
+body{
+    background: url(img/pictures/muro.jpg);
+}
+
+.container{
+    background-color: white;
+}
+
+.banner{
+    color: white;
+}

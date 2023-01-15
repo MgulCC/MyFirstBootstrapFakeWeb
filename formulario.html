@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="style.css">
+<title>Warehouse World: Publicar</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-8 ">
+                <img src="img/icons/logo.svg">
+            </div>
+
+        </div>
+        
+        <div class="row">
+
+            <div class="col">
+                <nav class="navbar navbar-light bg-primary">
+                    <a class="btn btn-light" href="index.html" role="button">Volver a inicio</a>
+                </nav>
+                
+            </div>
+
+        </div>
+
+
+        <div class="col-12 my-5">
+            <div class="h1">
+                Formulario de registro
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col my-3 mx-3 border border-dark">
+                <form action="contacto.php" method="POST">
+                    <div class="row">
+
+                        <div class="col-12 col-md-4">
+                            <div class="form-group">
+                                <label for="username">
+                                    Nombre
+                                </label>
+                                <input type="text" class="form-control" id="username">
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-8">
+                            <div class="form-group">
+                                <label for="lastnamee">
+                                    Apellidos
+                                </label>
+                                <input type="text" class="form-control" id="lastname">
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-md-3">
+                            <div class="form-group">
+                                <label for="postalcode">
+                                    Código postal
+                                </label>
+                                <input type="text" class="form-control" id="postalcode">
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-md-3">
+                            <div class="form-group">
+                                <label for="phonenumber">
+                                    Teléfono
+                                </label>
+                                <input type="text" class="form-control" id="phonenumber">
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6">
+                            <div class="form-group">
+                                <label for="email">
+                                    email
+                                </label>
+                                <input type="text" class="form-control" id="email">
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <div class="form-group">
+                                <label for="sugestions">
+                                    Sugerencias
+                                </label>   
+                                <textarea class="form-control" id="sugestions" rows="3">  
+                                </textarea>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-4">
+                            <div class="form-group">
+                                <label class="mr-sm-2" for="categoryselector">Categoría</label>
+                                <select class="custom-select mr-sm-2" id="categoryselector">
+                                  <option selected>elige...</option>
+                                  <option value="1">Monsters</option>
+                                  <option value="2">Robots</option>
+                                  <option value="3">Crystal</option>
+                                  <option value="4">Chorradasvarias</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-4">
+                            <div class="form-group">
+                                <label class="mr-sm-2" for="tokenselector">Tokens</label>
+                                <select class="custom-select mr-sm-2" id="tokenselector">
+                                  <option selected>elige...</option>
+                                  <option value="1">bitcoins</option>
+                                  <option value="2">otros nfts</option>
+                                  <option value="3">cigarros</option>
+                                  <option value="4">chapas de botella</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-4">
+                            <div class="form-group">
+                                <label class="mr-sm-2" for="dateselector">Fecha de salida</label>
+                                <select class="custom-select mr-sm-2" id="dateselector">
+                                  <option selected>elige...</option>
+                                  <option value="1">2022</option>
+                                  <option value="2">2023</option>
+                                  <option value="3">2025</option>
+                                  <option value="4">2026</option>
+                                </select>
+                            </div>
+                        </div>
+ 
+                        <div class="col-12 col-md-4">
+                            <div class="form-group">
+                                <label for="tittlee">
+                                    Título
+                                </label>
+                                <input type="text" class="form-control" id="tittlee">
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-4">
+                            <label for="nftfiles">
+                                Seleciona archivo
+                            </label>
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-input" id="nftfiles" lang="es">
+                                <label class="custom-file-label" for="nftfiles">JPG, PNG, SVG, PDF</label>
+                              </div>
+                        </div>
+                        
+                    </div>
+                    
+
+                    <button type="button" class="btn btn-primary my-2" data-toggle="modal" data-target="#exampleModal">
+                        Leer condiciones
+                    </button>
+
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="checkingbox">
+                        <label class="custom-control-label" for="checkingbox">aceptar condiciones</label>
+                    </div>
+
+                    <div class="text-right my-2">
+                        <button type="submit" class="btn-danger btn">
+                            enviar
+                        </button>
+                    </div>
+
+                </form>
+            </div>
+
+        </div>
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  ... Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia omnis dolore ducimus nesciunt veniam pariatur ullam esse consequatur culpa! Neque modi, molestiae rerum voluptate quas consequuntur culpa nostrum aliquam cupiditate.
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        
+
+
+        <footer class="row">
+            <div class="col text-center banner bg-primary">
+                <p>
+                    NFTs Warehouse World 2022
+                </p>
+                <div class="w-100 d-block" >
+                    <div class="row">
+                        <div class="col-4 offset-4 mb-2">
+                            <div class="row">
+                                <div class="col-4 col-md-2 offset-md-3 ">
+                                    <a href="#" target="_blank" title="Facebook">
+                                        <img src="img/icons/facebook.png">
+                                    </a>
+                                </div>
+                                <div class="col-4 col-md-2">
+                                    <a href="#" target="_blank" title="twitter">
+                                        <img src="img/icons/twitter.png">
+                                    </a>
+                                </div>
+                                <div class="col-4 col-md-2 ">
+                                    <a href="#" target="_blank" title="Youtube">
+                                        <img src="img/icons/youtube.png">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+            </div>
+        </footer> 
+
+    </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+</body>
+</html>
